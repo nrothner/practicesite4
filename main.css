@@ -158,13 +158,16 @@ img#img_four_two {
     margin: 1%;
 }
 
-/* Page Five */
+/* Page Five 
+Note - With the styles I grabbed for hover over the image, I found it didn't look great scaled at difference sizes. Since you don't "hover" on phone or tablet anyway, I thought creating styles was the best alternative to make my code work and not look terrible. I know it doesn't look great, but this is just for practice.*/
 
+/* Desktop Styles */
+@media only screen and (min-width: 801px) {
 #aside_five {
     display: inline-block;
     vertical-align: top;
-    width: 15%;
     background-color: lightcoral;
+    width: 15%;
     height: 100%;
 }
 
@@ -218,11 +221,54 @@ img#img_four_two {
     text-align: center;
   }
 
-  #header_five {
-      position: absolute;
-      top: 17%;
-      left: 48%;
-      color: white;
-      font-size: 2em;
-      transform: translate(-17%, -48%);
-  } 
+  #banner_five{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+h2#header_five {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    color: white;
+    font-size: 30px
+}
+}
+
+/* Tabelet and Mobile Styles */
+@media only screen and (max-width: 800px) {
+    #aside_five {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        background-color: lightcoral;
+        height: 100%;
+    }
+    
+    #section_five {
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
+        padding: 2px;;
+    }
+    
+    .img_five {
+        display: inline-block;
+        vertical-align: top;
+        margin: 5px;
+        padding: 5px;
+        width: 200px;
+    }
+    
+    .img_five img {
+        width: 200px;
+    }
+
+    #banner_five {
+        display: none;
+    }
+    
+    #header_five {
+        text-align: center;
+    }
