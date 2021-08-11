@@ -191,6 +191,8 @@ Note - With the styles I grabbed for hover over the image, I found it didn't loo
     width: 100%;
     border:lightgrey 3px solid;
     filter: drop-shadow(0 0 0.75rem crimson);
+    object-fit: cover;
+    object-position: 0 0;
 }
  
 .overlay {
